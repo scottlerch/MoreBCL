@@ -58,11 +58,34 @@
     <Compile Include="IO\PipeStream.cs" />
     <Compile Include="Linq\ParallelQueryExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="ServiceModel\ChannelFactoryEx.cs" />
     <Compile Include="ServiceModel\Extensions\ChannelFactoryExtensions.cs" />
     <Compile Include="ServiceModel\ChannelProxyPool.cs" />
     <Compile Include="Threading\LimitedConcurrencyTaskScheduler.cs" />
+    <Compile Include="Types\Angle.cs" />
+    <Compile Include="Types\AngleTypeConverter.cs" />
+    <Compile Include="Types\DataSize.cs" />
+    <Compile Include="Types\DataSizeTypeConverter.cs" />
+    <Compile Include="Types\Distance.cs" />
+    <Compile Include="Types\DistanceTypeConverter.cs" />
+    <Compile Include="Types\Frequency.cs" />
+    <Compile Include="Types\FrequencyTypeConverter.cs" />
+    <Compile Include="Types\Latitude.cs" />
+    <Compile Include="Types\LatitudeTypeConverter.cs" />
+    <Compile Include="Types\Longitude.cs" />
+    <Compile Include="Types\LongitudeTypeConverter.cs" />
     <Compile Include="Utilities\Retry.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
